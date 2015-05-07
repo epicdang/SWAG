@@ -1,57 +1,118 @@
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#about">About</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#services">Services</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#portfolio">Portfolio</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
 <header>
     <div class="header-content">
         <div class="header-content-inner">
-            <h1>Your Favorite Source of Free Bootstrap Themes</h1>
+            <h1>Unleash your swag</h1>
             <hr>
-            <p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
             <a href="#about" class="btn btn-primary btn-xl page-scroll">Find Out More</a>
         </div>
     </div>
 </header>
 
+<section class="no-padding" id="portfolio">
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/a.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                C'est Chic 
+                            </div>
+                            <div class="project-name">
+                                Fil-A
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/d.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Bro Collection
+                            </div>
+                            <div class="project-name">
+                                Edgar Allan Bro
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/c.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Bro Collection
+                            </div>
+                            <div class="project-name">
+                                Abroham Lincoln
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/b.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                C'est Chic
+                            </div>
+                            <div class="project-name">
+                                N-Tenders
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/e.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                C'est Chic
+                            </div>
+                            <div class="project-name">
+                                Le Freak
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <a href="#" class="portfolio-box">
+                    <%= image_tag("welcome/portfolio/f.jpg", :class=>"img-responsive", :alt=>"") %>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category text-faded">
+                                Bro Collection
+                            </div>
+                            <div class="project-name">
+                                Brorack Brobama
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
 <section class="bg-primary" id="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">We've got what you need!</h2>
+                <h2 class="section-heading">Swiggity Swag, what's in the bag?</h2>
                 <hr class="light">
-                <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                <a href="#" class="btn btn-default btn-xl">Get Started!</a>
+                <p class="text-faded">Swag is a clothing company aimed at bringing out your inner swag.  Whether you've already got swag or need help getting it out, Swag is here to help.</p>
+                <%= link_to "Start Shopping", products_path, class: "btn btn-default btn-xl" %>
             </div>
         </div>
     </div>
@@ -61,7 +122,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
-                <h2 class="section-heading">At Your Service</h2>
+                <h2 class="section-heading">United We Swag</h2>
                 <hr class="primary">
             </div>
         </div>
@@ -71,157 +132,33 @@
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-diamond wow bounceIn text-primary"></i>
-                    <h3>Sturdy Templates</h3>
-                    <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                    <h3>High Quality Clothing</h3>
+                    <p class="text-muted">Our clothes are very wow. Guaranteed.</p>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 text-center">
+                <div class="service-box">
+                    <i class="fa fa-4x fa-shirtsinbulk wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                    <h3>Swag Shirts</h3>
+                    <p class="text-muted">Swagged to perfection.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
                     <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
                     <h3>Ready to Ship</h3>
-                    <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                    <p class="text-muted">We only ship within the U.S. Need international? Contact us.</p>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6 text-center">
                 <div class="service-box">
-                    <i class="fa fa-4x fa-newspaper-o wow bounceIn text-primary" data-wow-delay=".2s"></i>
-                    <h3>Up to Date</h3>
-                    <p class="text-muted">We update dependencies to keep things fresh.</p>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 text-center">
-                <div class="service-box">
-                    <i class="fa fa-4x fa-heart wow bounceIn text-primary" data-wow-delay=".3s"></i>
-                    <h3>Made with Love</h3>
-                    <p class="text-muted">You have to make your websites with love these days!</p>
+                    <i class="fa fa-4x fa-rocket wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                    <h3>To the moon!</h3>
+                    <p class="text-muted">Doge forcasts indicate our clothing will launch us to the moon (accuracy pending)</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<section class="no-padding" id="portfolio">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/1.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/2.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/3.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/4.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/5.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-            <div class="col-lg-4 col-sm-6">
-                <a href="#" class="portfolio-box">
-                    <%= image_tag("welcome/portfolio/6.jpg", :class=>"img-responsive", :alt=>"") %>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category text-faded">
-                                Category
-                            </div>
-                            <div class="project-name">
-                                Project Name
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<aside class="bg-dark">
-    <div class="container text-center">
-        <div class="call-to-action">
-            <h2>Free Download at Start Bootstrap!</h2>
-            <a href="#" class="btn btn-default btn-xl wow tada">Download Now!</a>
-        </div>
-    </div>
-</aside>
-
-<section id="contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 text-center">
-                <h2 class="section-heading">Let's Get In Touch!</h2>
-                <hr class="primary">
-                <p>Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
-            </div>
-            <div class="col-lg-4 col-lg-offset-2 text-center">
-                <i class="fa fa-phone fa-3x wow bounceIn"></i>
-                <p>123-456-6789</p>
-            </div>
-            <div class="col-lg-4 text-center">
-                <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
-                <p><a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a></p>
-            </div>
-        </div>
-    </div>
-</section>

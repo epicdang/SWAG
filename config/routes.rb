@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   mount Shoppe::Engine => "/shoppe"
-
+  
   root to: "welcome#index"
 
+  get "products", to:"products#index", as:"products"
   get "product/:permalink", to: "products#show", as: "product"
   post "product/:permalink", to: "products#buy", as: "buy"
   
@@ -12,6 +13,8 @@ Rails.application.routes.draw do
   match "checkout", to: "orders#checkout", as: "checkout", via: [:get, :patch]
   match "checkout/pay", to: "orders#payment", as: "checkout_payment", via: [:get, :post]
   match "checkout/confirm", to: "orders#confirmation", as: "checkout_confirmation", via: [:get, :post]
+
+  get '*path' => redirect('/')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
